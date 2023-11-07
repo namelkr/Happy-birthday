@@ -1,0 +1,67 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f3f3;
+}
+
+h2 {
+  color: #333;
+  font-size: 28.8px; /* Increased by 20% (24px * 1.2) */
+  font-weight: bold;
+}
+
+p {
+  color: #555;
+  font-size: 21.6px; /* Increased by 20% (18px * 1.2) */
+  font-style: italic;
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+#guessInput {
+  padding: 8px;
+  font-size: 19.2px; /* Increased by 20% (16px * 1.2) */
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+#guessButton {
+  padding: 8px 16px;
+  font-size: 19.2px; /* Increased by 20% (16px * 1.2) */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#guessButton:hover {
+  background-color: #555;
+}
+
+.output-container {
+  margin-top: 20px;
+  font-size: 21.6px; /* Increased by 20% (18px * 1.2) */
+  color: #555;
+}
+
+#hangman {
+  max-width: 240px; /* Increased by 20% (200px * 1.2) */
+}
+
+.message {
+  font-size: 24px; /* Increased by 20% (20px * 1.2) */
+  color: #ff5733;
+  animation: fade-in 1s ease-in-out;
+}
+
+/* Additional Styles */
+.success {
+  color: green;
+}
+
+.failure {
+  color: red;
+}

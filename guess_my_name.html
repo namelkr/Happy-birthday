@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesforguess.css">
+</head>
+<body>
+  <h2>🎮 Guess My Name Game 🪓</h2>
+  <p>🔍 Try to guess the word by guessing one letter at a time.</p>
+  <p>⚠️ You lose 1 life for each consonant letter guess.</p>
+  <p>⚠️ You lose 2 lives for each vowel letter guess.</p>
+
+  <div class="input-container">
+    <input type="text" id="guessInput" placeholder="Enter a letter or full name">
+    <button id="guessButton">Guess</button>
+  </div>
+
+  <div class="output-container">
+    <p id="userWord"></p>
+    <p id="lives"></p>
+    <p id="lettersUsed"></p>
+    <p class="message" id="message"></p>
+  </div>
+
+  <script src="scriptforguess.js"></script>
+</body>
+</html>

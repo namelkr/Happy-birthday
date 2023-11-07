@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy birthday project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add CSS styles to move "Dear" and the username to the left corner */
+    .cardInside {
+      text-align: left;
+    }
+
+    .username {
+      font-weight: bold;
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click this card</h2>
+  <div class="body">
+    <div class="birthdayCard">
+      <div class="cardFront">
+        <h3 class="happy">HAPPY BIRTHDAY!</h3>
+        <div class="balloons">
+          <div class="balloonOne"></div>
+          <div class="balloonTwo"></div>
+          <div class="balloonThree"></div>
+          <div class="balloonFour"></div>
+        </div>
+      </div>
+      <div class="cardInside">
+        <h3 class="back">HAPPY BIRTHDAY!</h3>
+        <p>Dear <span class="username"></span>,</p> <!-- Placeholder for the user's name -->
+        <p>"Happy Birthday, <span class="username"></span>🎊🎁🎂 !</p><p> May your day be filled with joy, laughter, and all the things that make you smile. 🌟🥳🎉Wishing you a year ahead full of adventures, success, and beautiful moments. 🌟🎂🎁
+
+          🎈🎉 *Cheers to another amazing year!* 🎉🎈
+          "</p>
+
+        <p><a href="guess_my_name.html">From</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script>
+    // Get the name from the query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const userName = urlParams.get("user_name");
+
+    // Replace the username placeholders with the user's name
+    const usernamePlaceholders = document.querySelectorAll('.username');
+    usernamePlaceholders.forEach(function(placeholder) {
+      placeholder.textContent = userName;
+    });
+  </script>
+</body>
+</html>
